@@ -1,0 +1,15 @@
+<div class="h-full w-full text-center items-center flex flex-col gap-2">
+    <div class="!grid justify-center items-center text-center self-center grid-cols-4 gap-2">
+        <div *ngFor="let data of DG_Characters">
+            <mat-card>
+                <mat-card-content>
+                    <div class="justify-items-center">
+                        <img class="w-1/2" [src]="data.image" />
+                        <p> Nombre de personaje: {{data.name}}</p>
+                        <p>Genero de personaje: {{data.gender}}</p>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>
